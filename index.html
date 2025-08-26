@@ -1,0 +1,79 @@
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>INTERAKTIV - The Final Test!</title>
+        <link href="site-style.css" rel="stylesheet">
+        <link href="game-style.css" rel="stylesheet">
+        <link rel="shortcut icon" type="image/png" href="favicon.png">
+        <script defer src="script.js"></script>
+    </head>
+
+    <body>
+        <div class="overlay start-screen" id="start-screen">
+            <img src="assets/start/background-start.png" class="background-img" id="background-img">
+                <div class="start-text">
+                    <span class="start-title" id="start-title">THE RIFT HAS OPENED!</span>
+                    <span class="start-header" id="start-header">Click anywhere to start the game</span>
+                </div>
+            <div class="image-slot">
+                <img src="assets\start\upper-city.png" class="top-ct" id="top-ct" draggable="false">
+                <img src="assets\start\lower-city.png" class="bottom-ct" id="bottom-ct" draggable="false">
+                <div class="portal-container">
+                    <img src="assets/start/portal-burst.png" class="portal-burst" id="portal-burst" draggable="false">
+                    <div class="portal" id="portal">
+                        <img src="assets/start/portal.png" class="portal-rotator" id="portal-rotator">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="header" id="header">
+            <a href="https://interaktiv.benilde.edu.ph"><button class="left-header-btn header-btn" id="back-header-btn"><img id="back-btn-img" class="header-btn-img" src="assets/header/back.png"></button></a>
+            <button class="right-header-btn header-btn" id="mute-header-btn"><img id="mute-btn-img" class="header-btn-img" src="assets/header/unmute.png"></button>
+        </div>
+
+        <div class="game-board" id="game-board">
+            <span class="instructions">This is the final stretch! Input all the codes you've collected throughout your journey!</span>
+            <div class="prompt-box">
+                <div class="prompt-container">
+                    <div class="prompt-text" id="prompt-text">MODULE 2 </div>
+                    <div class="prompt-question" id="prompt-question">
+                    This Module is where you discover your Benildean-Lasallian Identity!
+                    </div>
+                </div>
+            </div>
+            <input class="input-box" id="input-box" placeholder="TYPE YOUR ANSWER HERE">
+            <button class="submit-btn" id="submit-btn" onclick="submitAnswer()"><img class="submit-btn-img" src="assets/submit-btn.png"></button>
+        </div>
+
+        <div class="overlay end-screen" id="pass-end-screen">
+            <div class="portal-container2">
+                <div class="portal2" id="portal2">
+                    <img src="assets/start/portal.png" class="portal-rotator2" id="portal-rotator2">
+                </div>
+            </div>
+            <div class="end-title">CONGRATULATIONS!</div>
+            <img src="assets/final-countdown.png" class="token-img">
+
+            <div class="end-message">You have gained access to the final page of your INTERAKTIV Journey!</div>
+            <a href="https://interaktiv.benilde.edu.ph/?page_id=24390">
+                <button class="menu-btn" id="menu-btn">
+                    <img class="menu-btn-img" src="assets/enter-btn.png">
+                </button>
+            </a>
+        </div>
+        
+        <div class="overlay end-screen" id="fail-end-screen">
+            <div class="end-title">LET'S RUN IT BACK!</div>
+            <div class="portal-container-reset">
+                <div class="portal-reset" id="portal-reset">
+                    <img src="assets/start/portal.png" class="portal-rotator2" id="portal-rotator2">
+                </div>
+            </div>
+            <div class="end-message">“Jump into the portal to retry”</div>
+        </div>
+    </body>
+
+</html>
