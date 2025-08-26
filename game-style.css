@@ -28,17 +28,17 @@ img {
 
 @font-face {
     font-family: Arnel;
-    src: url(FONTS/arnel.otf);
+    src: url(fonts/arnel.otf);
 }
 
 @font-face {
     font-family: Helvectica;
-    src: url(FONTS/helvetica.ttf);
+    src: url(fonts/helvetica.ttf);
 }
 
 @font-face {
     font-family: Komik;
-    src: url(FONTS/komik.ttf);
+    src: url(fonts/komik.ttf);
 }
 
 /* GAME BOARD ELEMENTS */
@@ -276,4 +276,5 @@ img {
         margin: 5px 0px 0px 0px;
         width: 280px;
     }
+
 }
